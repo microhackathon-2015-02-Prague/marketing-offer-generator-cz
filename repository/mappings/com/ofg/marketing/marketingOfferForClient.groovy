@@ -10,7 +10,7 @@ io.coderate.accurest.dsl.GroovyDsl.make {
         headers {
             header 'Content-Type': 'application/json'
         }
-        body '''
+        body '''\
         [{
             "marketingOffer" : "MARKETING_OFFER_1"
         }]

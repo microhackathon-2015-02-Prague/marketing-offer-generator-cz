@@ -1,5 +1,3 @@
-package com.ofg.twitter
-
 import com.ofg.infrastructure.environment.EnvironmentSetupVerifier
 import groovy.transform.TypeChecked
 import org.springframework.boot.SpringApplication

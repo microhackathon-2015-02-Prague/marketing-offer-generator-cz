@@ -1,6 +1,5 @@
 package com.ofg.marketing.controller
 
-import com.google.common.base.Splitter
 import com.ofg.marketing.MarketingOfferGenerator
 import com.ofg.marketing.beans.ApplicationBean
 import com.ofg.marketing.beans.MarketingOfferBean
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
-import javax.ws.rs.core.MediaType
 
 import javax.validation.constraints.NotNull
 import javax.ws.rs.core.Response
@@ -42,7 +40,7 @@ class MarketingOfferController {
     @RequestMapping(
             value = '{loanApplicationId}',
             method = PUT,
-            consumes = MediaType.APPLICATION_JSON
+            consumes = "application/json"
             )
     @ApiOperation(value = "Generate marketing offer for a given application",
             notes = "")
@@ -54,7 +52,7 @@ class MarketingOfferController {
     @RequestMapping(
             value = '{firstname_lastname}',
             method = GET,
-            produces = MediaType.APPLICATION_JSON
+            produces = "application/json"
     )
     @ApiOperation(value = "Provide marketing offer for a given client",
             notes = "")
